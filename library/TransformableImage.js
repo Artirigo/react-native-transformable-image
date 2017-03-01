@@ -28,9 +28,13 @@ export default class TransformableImage extends Component {
   };
 
   static defaultProps = {
+    pixels: undefined,
     enableTransform: true,
     enableScale: true,
-    enableTranslate: true
+    enableTranslate: true,
+    onSingleTapConfirmed: undefined,
+    onTransformGestureReleased: undefined,
+    onViewTransformed: undefined,
   };
 
   constructor(props) {
